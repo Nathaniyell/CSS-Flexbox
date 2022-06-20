@@ -28,7 +28,8 @@
     align-items: center;
     padding: 0 20px;
     position: relative;
-    left: 120px;
+    top: 80px;
+    left: 40px;
 }
 
 .gridbox1 .contents h1 {
@@ -52,7 +53,7 @@
     color: #fff;
     background-color: hsl(248, 32%, 49%);
     padding: 15px 30px;
-    width: 60%;
+    width: 90%;
     display: block;
     text-align: center;
     margin: 10px auto;
@@ -67,7 +68,7 @@
 }
 
 .gridbox2 form {
-    width: 60%;
+    width: 90%;
     background-color: #fff;
     display: block;
     padding: 20px;
@@ -80,6 +81,7 @@
     margin: 15px;
     display: block;
     width: 92%;
+    background: transparent;
     line-height: 2.5;
     padding: 0 20px;
     font-weight: 600;
@@ -104,6 +106,7 @@
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .gridbox2 form small {
@@ -145,8 +148,19 @@
 }
 
 @media (max-width: 700px) {
+    .gridbox2 {
+        width: 120%;
+        
+       }
     .gridbox2 form {
-        width: 85%;
-
+        width: 95%;
+    }
+}
+@media (max-width: 445px) {
+    .gridbox2 {
+        width: 125%;
+               }
+               .gridbox2 form {
+                width: 100%;
     }
 }
